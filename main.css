@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px auto auto auto;
+}
+
+.layout-item {
+    color: white;
+    background-color: gray;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+header {
+    width: auto;
+    height: 100px;
+    vertical-align: middle;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+}
+
+section {
+    height: 300px;
+    margin-right: 5px;
+}
+
+main {
+    height: 300px;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+}
+
+footer {
+    height: 100px;
+    grid-column-start: 1;
+    grid-column-end: span 4;
+}
